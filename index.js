@@ -29,3 +29,12 @@ fs.unlink('index.txt', (err) => {
         console.log("file deleted");
     }
 });
+
+fs.rename("index.txt", "rename.txt", (err) => {
+    if (err) {
+        console.log("error on rename" , err);
+    } else {
+        console.log("file renamed");
+    }
+}
+)
